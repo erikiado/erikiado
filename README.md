@@ -106,3 +106,20 @@ Start the development server
 $ python manage.py runserver
 ```
 After this you can go to your browser and go to http://localhost:8000, and you should be able to see the project running.
+
+## Patterns Used
+
+In order to require few resources and to improve the performance of the main function which is the classification. The weights and model are inside a Singleton. This ensures that there is only one instance of the classifier which the application can use. If the constructor is called, once there is already an instance, that instance is returned, else a new HandClassifier is created.
+
+
+## Standards Used
+Standards for documentation and code style were used.
+
+### Code Style
+The PEP-8 standard for code was used in the development of this project.
+The tool flake8 which is part of the dependencies is used to lint the code following this standard.
+https://www.python.org/dev/peps/pep-0008/
+
+### Documentation
+For the documentation the numpy standard is being used.
+https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt

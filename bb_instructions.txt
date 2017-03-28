@@ -1,0 +1,5 @@
+All documents and instructions for this partial are on my github repository: 
+https://github.com/erikiado/erikiado 
+
+The working solution is already deployed here: 
+http://erikiado.com 
