@@ -9,6 +9,7 @@ NOTE: In order to test the correct functionality, an image with the following ch
 * Dimensions: 20x20x1
 * (x1) refers that the image is a binary image or a mask with just white and black pixels.
 
+NOTE 2: The application is in spanish given the target audience are mexican students.
 ## System Requirements
 
 * [Python 3.5](https://www.python.org/downloads/)
