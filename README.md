@@ -1,4 +1,13 @@
-# erikiado: Mexican Hand Sign Language Image Recognition
+# Mexican Hand Sign Language Image Recognition
+
+## Test the application
+In order to test this application, it is required to enter to the following url and follow the instructions on the page.
+
+[Test app in my personal website](http://www.erikiado.com/)
+
+NOTE: In order to test the correct functionality, an image with the following characteristics needs to be uploaded:
+* Dimensions: 20x20x1
+* (x1) refers that the image is a binary image or a mask with just white and black pixels.
 
 ## System Requirements
 
