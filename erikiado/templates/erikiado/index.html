@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block tituloPagina %}: Mi casa Su casa{% endblock %}
+
+
+
+
+
+{% block body %}
+
+
+
+
+
+
+<br>
+<br>
+
+<h2 class="text-center"><strong>Proyectos</strong></h2>
+<div class="row">
+	<div class="col-md-4">
+		<h3 class="text-center"><strong>muéstraMe</strong></h3>
+		<img src={% static "img/muestraLogo.png" %} class="img-responsive center-block" alt="">
+		<div class="row">
+		<div class="col-md-4 col-md-offset-1 col-xs-offset-2 col-xs-8">
+			<a href="/projects/muestrame" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+		<div class="col-md-4 col-md-offset-2 col-xs-offset-2 col-xs-8">
+			<a href="http://muestra.me/" class="btn btn-primary text-center" style="margin-bottom:5%;"><strong>IR</strong></a>
+		</div>
+		<div class="lineSeparator"></div>
+
+		</div>
+		<!--
+				<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-xs-offset-2 col-xs-8">
+			<a href="#" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+
+		</div>-->
+
+	</div>
+	<div class="col-md-4">
+
+		<h3 class="text-center"><strong>[tosp]</strong></h3>
+		<img src={% static "img/tospLogo.png" %} class="img-responsive center-block" alt="">
+				<div class="row">
+		<div class="col-md-4 col-md-offset-1 col-xs-offset-2 col-xs-8">
+			<a href="/projects/tosp" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+		<div class="col-md-4 col-md-offset-2 col-xs-offset-2 col-xs-8">
+			<a href="http://tosp.io/" class="btn btn-primary text-center" style="margin-bottom:5%;"><strong>IR</strong></a>
+		</div>
+		<div class="lineSeparator"></div>
+
+		</div>
+	</div>
+
+
+	<div class="col-md-4">
+		<h3 class="text-center"><strong>tianguis</strong></h3>
+		<img src={% static "img/tianguisLogo.png" %}  class="img-responsive center-block" alt="">
+				<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-xs-offset-2 col-xs-8">
+			<a href="/projects/tianguis" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+		<div class="lineSeparator"></div>
+
+		</div>
+	</div>
+</div>
+<div class="row">
+	
+	<div class="col-md-4">
+		<h3 class="text-center"><strong>Procesamiento de Imagenes</strong></h3>
+		<img src={% static "img/manoEjemplo.png" %} class="img-responsive center-block" alt="">
+				<div class="row">
+				<div class="col-md-6 col-md-offset-3 col-xs-offset-2 col-xs-8">
+			<a href="https://bitbucket.org/erikiado/reconocedor" class="btn btn-primary" style="margin-bottom:5%;"><strong>REPO</strong></a>
+		</div><!--
+		<div class="col-md-4 col-md-offset-1 col-xs-offset-2 col-xs-8">
+			<a href="/projects/manos" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+		<div class="col-md-4 col-md-offset-2 col-xs-offset-2 col-xs-8">
+			<a href="https://bitbucket.org/erikiado/reconocedor" class="btn btn-primary text-center" style="margin-bottom:5%;"><strong>REPO</strong></a>
+		</div>-->
+		<div class="lineSeparator"></div>
+
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h3 class="text-center"><strong>Pi Radio</strong></h3>
+		<img src={% static "img/piradioLogo.png" %}  class="img-responsive center-block" alt="">
+				<div class="row">
+		<div class="col-md-6 col-md-offset-3 col-xs-offset-2 col-xs-8">
+			<a href="/projects/piradio" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+		<div class="lineSeparator"></div>
+
+		</div>
+	</div>
+	<div class="col-md-4">
+		<h3 class="text-center"><strong>Znake</strong></h3>
+		<img src={% static "img/znakeLogo.png" %}  class="img-responsive center-block" alt="">
+				<div class="row">
+		<div class="col-md-4 col-md-offset-1 col-xs-offset-2 col-xs-8">
+			<a href="/projects/znake" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+		<div class="col-md-4 col-md-offset-2 col-xs-offset-2 col-xs-8">
+			<a href="https://github.com/erikiado/FinalPOO" class="btn btn-primary text-center" style="margin-bottom:5%;"><strong>REPO</strong></a>
+		</div>
+		<div class="lineSeparator"></div>
+		</div>
+	</div>
+</div>
+<div class="row">
+
+	<div class="col-md-4 col-md-offset-4">
+		<h3 class="text-center"><strong>Game of Life</strong></h3>
+		<img src={% static "img/lifeLogo.png" %} class="img-responsive center-block" alt="">
+				<div class="row">
+		<div class="col-md-4 col-md-offset-1 col-xs-offset-2 col-xs-8">
+			<a href="/projects/life" class="btn btn-primary" style="margin-bottom:5%;"><strong>VER</strong></a>
+		</div>
+		<div class="col-md-4 col-md-offset-2 col-xs-offset-2 col-xs-8">
+			<a href="https://github.com/erikiado/problemas/tree/master/Life" class="btn btn-primary text-center" style="margin-bottom:5%;"><strong>REPO</strong></a>
+		</div>
+		<div class="lineSeparator"></div>
+		</div>
+	</div>
+</div>
+
+
+<!--<div id="works"  class=" clearfix griduno"> 
+<div class="row">
+<div class="col-md-8 col-md-offset-2">
+<figure class="effect-oscar  wowload fadeIn">
+				<img src="images/portfolio/1.jpg" %} alt="img01" class="img-responsive" />
+				<figcaption>	
+				<br><br><br><br>
+						<h2>Proyectos</h2>
+						<br><br><br><br><br><br><br><br>
+						<p><span style="font-size:1.5em;">Quieres ver que he hecho?</span><br>
+						<a href="images/portfolio/1.jpg" title="1" data-gallery>A ver</a></p>  
+						         
+				</figcaption>
+		</figure>
+</div>
+	
+</div>
+
+		
+
+</div>
+-->
+<!--
+<div id="works"  class=" clearfix griduno"> 
+
+
+
+		 <figure class="effect-oscar  wowload fadeInUp">
+				<img src="images/portfolio/2.jpg" %} alt="img01"/>
+				<figcaption>
+			<br><br><br><br>
+						<h2>Fotos</h2>
+						<br><br><br><br><br><br><br><br>
+						<p><span style="font-size:1.5em;">Mira mis fotos</span><br>
+						<a href="images/portfolio/1.jpg" title="1" data-gallery><span style="font-size:1.4em;">Proximamente</span></a></p>  
+						         
+					             
+				</figcaption>
+		</figure>
+
+
+		 <figure class="effect-oscar  wowload fadeInUp">
+				<img src="images/portfolio/3.jpg" %} alt="img01"/>
+				<figcaption>
+							<br><br><br><br>
+						<h2>Videos</h2>
+						<br><br><br><br><br><br><br><br>
+						<p><span style="font-size:1.5em;">Ve los videos</span><br>
+						<a href="images/portfolio/1.jpg" title="1" data-gallery><span style="font-size:1.4em;">Proximamente</span></a></p>  
+						                   
+				</figcaption>
+		</figure>
+
+	
+		
+		 
+</div>
+
+-->
+
+
+<div class="row">
+	<div class="col-md-8 col-md-offset-2">
+		<div class="grid">
+	<figure class="effect-ruby">
+	<img src={% static "img/82.png" %} alt="">
+		<figcaption>
+				<h2>Contacto</h2>  
+						<p>erikiado@gmail.com<br><br><a href="https://github.com/erikiado" target="_blank"><i class="fa fa-github fa-2x"></i></a> <a href="https://bitbucket.org/erikiado/" target="_blank"><i class="fa fa-bitbucket fa-2x"></i></a> <a href="https://www.instagram.com/erikiadoo/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a> </p>
+		</figcaption>
+		
+	</figure>
+</div>
+
+	</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<a href="#proy" class="gototop "><i class="fa fa-angle-up  fa-3x"></i></a>
+{% endblock %}

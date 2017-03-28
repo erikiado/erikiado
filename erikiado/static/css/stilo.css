@@ -1,0 +1,389 @@
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+@keyframes aparecerOpacidad{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@-webkit-keyframes aparecerOpacidad{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes moverSombras{
+	0% {text-shadow: 14px 14px 2px #A000F7, -15px -3px 2px #3BFF00, 8px -12px 2px #003BFF;}
+	25% {text-shadow: -14px 2px 2px #A000F7, 15px -3px 2px #3BFF00, -2px 12px 2px #003BFF;}
+	50% {text-shadow: 6px -10px 2px #A000F7, 0px 9px 2px #3BFF00,-16px 0px 2px #003BFF;}
+	75% {text-shadow: -14px 14px 2px #A000F7, 10px -5px 2px #3BFF00, 6px 10px 2px #003BFF;}
+}
+
+@-webkit-keyframes moverSombras{
+    0% {text-shadow: 14px 14px 2px #A000F7, -15px -3px 2px #3BFF00, 8px -12px 2px #003BFF;}
+	25% {text-shadow: -14px 2px 2px #A000F7, 15px -3px 2px #3BFF00, -2px 12px 2px #003BFF;}
+	50% {text-shadow: 6px -10px 2px #A000F7, 0px 9px 2px #3BFF00,-16px 0px 2px #003BFF;}
+	75% {text-shadow: -14px 14px 2px #A000F7, 10px -5px 2px #3BFF00, 6px 10px 2px #003BFF;}
+}
+
+
+body {	color:#666;	font:300 15px/15px Roboto,Arial,Helvetica;background-color:#f4f2ed;-webkit-font-smoothing:antialiased;}
+
+
+a{
+	color: #3ddb4b;
+}
+
+.btn,a,.btn:hover,a:hover {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+outline: none !important;
+}
+
+.spacer{padding: 6em 0;}
+
+.btn{border:none;border-radius: 0;padding: 1em 1.5em;background: rgba(0,0,0,0.5);text-transform: uppercase;}
+.btn:hover,.btn:active{color: #fff;}
+.btn-default{color: #ccc;border: 1px solid #aaa;}
+.btn-default:hover,.btn-default:active{background: rgba(0,0,0,0.8);}
+.btn-primary{color: #ff5a18;background:#263760;width: 100%;outline: none;}
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus{background:#3ddb4b;box-shadow: none;}
+
+
+
+#txtHeader {
+	text-align: center;
+	color: white;
+	text-shadow: 1px 2px 4px black;
+	-webkit-animation: aparecerOpacidad 10s;/* Chrome, Safari, Opera */
+    animation: aparecerOpacidad 10s;
+	font-size: 200%;
+	-webkit-animation: moverSombras 3s infinite; /* Chrome, Safari, Opera */
+    animation: moverSombras 3s infinite;
+    	  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+
+
+
+
+
+.backProject{
+	font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	max-width: 1000px;
+	list-style: none;
+	text-align: center;
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+
+	text-transform: uppercase;
+	  text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 5px;
+}
+
+
+figure.effect-ruby {
+	background-color: #3ddb4b;
+}
+figure.effect-ruby:hover {
+	background-color: #222;
+}
+
+
+figure.effect-ruby img {
+	opacity: 0.8;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+}
+
+figure.effect-ruby:hover img {
+	opacity: 0.6;
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-ruby h2 {
+	margin-top: 20%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-ruby p {
+	margin: 1em 0 0;
+	padding: 2em;
+	border: 1px dotted #fff;
+	font-size: 1.2em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0) scale(1.1);
+	transform: translate3d(0,20px,0) scale(1.1);
+} 
+
+figure.effect-ruby:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-ruby:hover p {
+	opacity: 1;
+	background-color: #ff5a18;
+	-webkit-transform: translate3d(0,0,0) scale(1);
+	transform: translate3d(0,0,0) scale(1);
+}
+
+figcaption{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-default {
+    background-color: #263760;
+    border-color: #263760;
+    border-bottom: solid 1em #3ddb4b;
+}
+
+
+.navbar{
+	margin-bottom: 3em;
+}
+
+.navbar-brand{
+	padding-top: 0;
+}
+
+footer{
+	background-color: #104060;
+	color:#Eee;
+	padding-bottom: 2em;
+	padding-top: 2em;
+}
+
+.mainContent{
+	padding-bottom:5em;
+/*	margin-top: 12em;*/
+}
+
+.footer-list{
+	list-style-type: none; 
+	padding:0;
+}
+
+.foot-link{
+	color:#3ddb4b;
+	font-size: 1.15em;
+}
+
+.foot-link:focus{
+	color:#FFF;
+}
+
+.foot-link:hover{
+	color:#ff5a18;
+}
+
+.logo{
+	margin: 5% 0;
+	padding: 5px 0;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	float: left;
+	padding-bottom: 18%;
+	color: 'transparent';
+}
+
+.grid{
+	margin-top: 10%;
+}
+
+.lineSeparator{
+	height: 1px;
+	margin-left: 15%;
+	margin-top: 25%;
+	margin-right: 15%;
+	margin-bottom: 5%;
+	background-color: #CCC;
+}
+
+li{
+	margin-bottom: .5em;
+}
+
+
+
+.infoProyecto{
+	padding:3% 3%;
+}
+
+
+.contentProyecto{
+	padding: 4% 4%;
+	background-color: #DDD;
+}
+
+
+
+.carousel-inner > .item > img{
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
+.carousel-control > .fa{
+	color: #3ddb4b;
+	margin-top: 240px;
+	font-size: 40px;
+	margin-bottom: 240px;
+}
+
+.carousel-indicators {
+	color:black;
+	font-size: 50px;
+	border-bottom-color: black;
+}
+
+.carousel-indicators li{
+	background-color: #FFF;
+	border-color: black;
+}
+
+.carousel-indicators .active{
+	background-color: #3ddb4b;
+}
+
+.carousel-caption{
+	color: #000;
+	font-size: 1.5em;
+	text-align: center;
+	text-shadow: 0 1px 2px rgba(255,255,255,.6);
+}
