@@ -13,9 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url,include
+from django.conf.urls import url, include
 from django.contrib import admin
-from .views import home, piradio, muestrame, tosp, znake, life, manos, tianguis, msl, classifier_upload
+from .views import home, piradio, muestrame, tosp, znake, life, manos, tianguis, msl,\
+                classifier_upload
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf import settings
 from django.conf.urls.static import static
@@ -31,7 +32,7 @@ projects = [
     url(r'^msl/', msl, name='msl'),
 ]
 
-
+# This is the only url currently active.
 classifier = [
     url(r'^upload/', classifier_upload, name='classifier_upload'),
 ]
@@ -43,7 +44,6 @@ urlpatterns = [
     url(r'^projects/', include(projects)),
     url(r'^classifier/', include(classifier)),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
 
 
 urlpatterns += staticfiles_urlpatterns()

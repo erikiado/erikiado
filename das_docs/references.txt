@@ -1,0 +1,7 @@
+In the development of this  delivery the following list of documents and books where referenced:
+	- Bass, Len, Rick Kazman, and Paul Clements. Software Architecture in Practice, Third Edition. N.p.: Addison-Wesley Professional, 2012. Print. 
+    - https://medium.com/inteligencia-artificial-itesm-cq/generaci%C3%B3n-de-dataset-para-problema-de-visi%C3%B3n-computarizada-a90c77a0dc9a
+    - https://arxiv.org/pdf/1612.08484.pdf
+    - https://keras.io/
+	- https://medium.com/inteligencia-artificial-itesm-cq
+	- Past projects

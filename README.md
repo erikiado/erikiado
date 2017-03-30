@@ -1,7 +1,7 @@
 # Mexican Hand Sign Language Image Recognition
 
 ## Test the application
-In order to test this application, it is required to enter to the following url and follow the instructions on the page.
+In order to manually test this application, it is required to enter to the following url and follow the instructions on the page.
 
 [Test app in my personal website](http://www.erikiado.com/)
 
@@ -10,6 +10,8 @@ NOTE: In order to test the correct functionality, an image with the following ch
 * (x1) refers that the image is a binary image or a mask with just white and black pixels.
 
 NOTE 2: The application is in spanish given the target audience are mexican students.
+
+NOTE 3: Test images are provided under the test_images folder on the repository.
 ## System Requirements
 
 * [Python 3.5](https://www.python.org/downloads/)
@@ -106,6 +108,14 @@ Start the development server
 $ python manage.py runserver
 ```
 After this you can go to your browser and go to http://localhost:8000, and you should be able to see the project running.
+
+## Running the tests
+Since this application is wrapped around the django framework I took advantage of its test framework which executes all the test inside each application and gives us some perks in order to unittest and to make integration tests.
+To run the tests, after the project can be ran, execute the following command:
+
+```bash
+$ python manage.py test
+```
 
 ## Patterns Used
 

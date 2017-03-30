@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Prediction(models.Model):
     """ Main model of the family app.
 
@@ -35,10 +36,9 @@ class Prediction(models.Model):
     egresos tables are created.
     - Clarify the contents of the number_hijos_diferentes_papas field
     """
-    
+
     img_url = models.TextField()
     # label = models.CharField()
-
 
     def __str__(self):
         """ Prints the texto attribute of this class.
