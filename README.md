@@ -117,11 +117,6 @@ To run the tests, after the project can be ran, execute the following command:
 $ python manage.py test
 ```
 
-## Patterns Used
-
-In order to require few resources and to improve the performance of the main function which is the classification. The weights and model are inside a Singleton. This ensures that there is only one instance of the classifier which the application can use. If the constructor is called, once there is already an instance, that instance is returned, else a new HandClassifier is created.
-
-
 ## Standards Used
 Standards for documentation and code style were used.
 

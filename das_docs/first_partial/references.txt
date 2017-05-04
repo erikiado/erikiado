@@ -1,5 +1,0 @@
-In the development of this first delivery the following list of 
-documents and books where referenced:
-	Bass, Len, Rick Kazman, and Paul Clements. Software Architecture in Practice, Third Edition. N.p.: Addison-Wesley Professional, 2012. Print. 
-	https://medium.com/inteligencia-artificial-itesm-cq
-	Past projects.
